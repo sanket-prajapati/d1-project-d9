@@ -1,0 +1,29 @@
+uuid: 25713708-d5ce-4dbf-88b2-14d40f476954
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emp_name_
+    - node.type.employee_detail
+    - taxonomy.vocabulary.employee_name
+id: node.employee_detail.field_emp_name_
+field_name: field_emp_name_
+entity_type: node
+bundle: employee_detail
+label: 'Employee Name '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      employee_name: employee_name
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

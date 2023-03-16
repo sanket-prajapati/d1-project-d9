@@ -1,0 +1,33 @@
+uuid: 86dd700c-53e9-48cd-956b-a9fd2ea2e610
+langcode: en
+status: true
+dependencies: {  }
+name: d4drupal_img_style
+label: 'D4Drupal img style'
+effects:
+  13f83a50-04ec-4a17-b460-34be99f45a54:
+    uuid: 13f83a50-04ec-4a17-b460-34be99f45a54
+    id: image_convert
+    weight: 1
+    data:
+      extension: png
+  50116a10-3a3d-44d0-a89f-0d090d958ee7:
+    uuid: 50116a10-3a3d-44d0-a89f-0d090d958ee7
+    id: image_desaturate
+    weight: 2
+    data: {  }
+  bd30c3a9-1661-4b8a-9de3-85b6f040c96c:
+    uuid: bd30c3a9-1661-4b8a-9de3-85b6f040c96c
+    id: image_rotate
+    weight: 3
+    data:
+      degrees: 10
+      bgcolor: '#ff3333'
+      random: false
+  e4dcf9dd-b3ad-4fec-ba5c-a83c9d6c619e:
+    uuid: e4dcf9dd-b3ad-4fec-ba5c-a83c9d6c619e
+    id: image_resize
+    weight: 4
+    data:
+      width: 400
+      height: 200

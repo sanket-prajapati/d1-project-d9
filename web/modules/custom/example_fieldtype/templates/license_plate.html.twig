@@ -1,0 +1,10 @@
+{# <span class="license-plate—code">{{ code }}</span> 
+<span class="license-plate—number">{{ number }}</span>  #}
+{# <span class="license-plate">{{ code }} {{ number }}</span> #}
+
+{% if concatenated %}
+ <span class="license-plate">{{ code }} {{ number }}</span>
+{% else %}
+ <span class="license-plate—code">{{ code }}</span> <span
+ class="license-plate—number">{{ number }}</span>
+{% endif %} 

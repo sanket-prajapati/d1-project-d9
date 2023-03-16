@@ -1,0 +1,37 @@
+uuid: 40db53b4-aa85-4809-95a8-49bae5744289
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.d4drupal.body
+    - field.field.node.d4drupal.field_reference_field
+    - node.type.d4drupal
+  module:
+    - text
+    - user
+id: node.d4drupal.default
+targetEntityType: node
+bundle: d4drupal
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_reference_field:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

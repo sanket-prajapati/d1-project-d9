@@ -1,0 +1,6 @@
+name: demo
+type: module
+description: this is for drush test
+package: Custom
+core_version_requirement: ^9 || ^10
+

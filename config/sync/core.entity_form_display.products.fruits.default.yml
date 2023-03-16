@@ -1,0 +1,51 @@
+uuid: 300a97df-d478-455b-9aab-aed3864d639f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.products.fruits.field_fruit_image
+    - field.field.products.fruits.field_name
+    - image.style.thumbnail
+    - productentity.products_type.fruits
+  module:
+    - image
+id: products.fruits.default
+targetEntityType: products
+bundle: fruits
+mode: default
+content:
+  field_fruit_image:
+    type: image_image
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

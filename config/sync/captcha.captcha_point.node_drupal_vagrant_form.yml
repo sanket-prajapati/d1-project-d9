@@ -1,0 +1,7 @@
+uuid: 454c95b6-569a-45c6-9031-8956bd7e9c0c
+langcode: en
+status: false
+dependencies: {  }
+formId: node_drupal_vagrant_form
+captchaType: default
+label: node_drupal_vagrant_form

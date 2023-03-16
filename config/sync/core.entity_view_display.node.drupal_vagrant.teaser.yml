@@ -1,0 +1,32 @@
+uuid: 34181c0f-3090-46e7-b8cc-5e81fc4502ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drupal_vagrant.body
+    - field.field.node.drupal_vagrant.field_vagrant_reference
+    - node.type.drupal_vagrant
+  module:
+    - text
+    - user
+id: node.drupal_vagrant.teaser
+targetEntityType: node
+bundle: drupal_vagrant
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_vagrant_reference: true

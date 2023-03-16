@@ -1,0 +1,11 @@
+services:
+  event_subscriber.event_subscriber:
+    class: Drupal\event_subscriber\EventSubscriber\EventSubscriberSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }
+
+  event_subscriber.route_subscriber:
+    class: Drupal\event_subscriber\EventSubscriber\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

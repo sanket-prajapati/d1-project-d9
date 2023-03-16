@@ -1,0 +1,90 @@
+uuid: 9032d268-81d6-42fb-8991-56da6432a320
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_field_type_check
+    - field.field.node.page.field_formatter_h3
+    - field.field.node.page.field_image_styling
+    - field.field.node.page.field_new_bus
+    - field.field.node.page.field_new_car
+    - field.field.node.page.field_new_demo
+    - image.style.d4drupal_img_style
+    - node.type.page
+  module:
+    - example_field_formatter
+    - example_fieldtype
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_field_type_check:
+    type: demo_field_formatter
+    label: above
+    settings:
+      concatenated: 1
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_formatter_h3:
+    type: demo_field_formatter
+    label: above
+    settings:
+      concatenated: 0
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image_styling:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: d4drupal_img_style
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_new_bus:
+    type: default_license_plate_formatter
+    label: above
+    settings:
+      concatenated: '1'
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_new_car:
+    type: default_license_plate_formatter
+    label: above
+    settings:
+      concatenated: 1
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_new_demo:
+    type: example_field_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

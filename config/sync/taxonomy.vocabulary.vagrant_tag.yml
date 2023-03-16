@@ -1,0 +1,8 @@
+uuid: 8c5a0631-19fe-409f-b0c2-953f49992dea
+langcode: en
+status: true
+dependencies: {  }
+name: Vagrant-tag
+vid: vagrant_tag
+description: ''
+weight: 0

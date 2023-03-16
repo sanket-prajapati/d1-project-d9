@@ -1,0 +1,4 @@
+services:
+  config_impoter_entity.importer_manager:
+    class: Drupal\config_impoter_entity\Plugin\ImporterManager
+    parent: default_plugin_manager

@@ -1,0 +1,29 @@
+uuid: 0e244a8f-3932-417b-bd80-11f2912af273
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_works
+    - taxonomy.vocabulary.employee_name
+    - taxonomy.vocabulary.employee_works
+id: taxonomy_term.employee_name.field_works
+field_name: field_works
+entity_type: taxonomy_term
+bundle: employee_name
+label: Works
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      employee_works: employee_works
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,47 @@
+uuid: c2fcdfbd-7472-4a08-bf59-fc9a19791190
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.employee_name.field_employee_name
+    - field.field.taxonomy_term.employee_name.field_experience
+    - field.field.taxonomy_term.employee_name.field_works
+    - taxonomy.vocabulary.employee_name
+  module:
+    - text
+id: taxonomy_term.employee_name.default
+targetEntityType: taxonomy_term
+bundle: employee_name
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_experience:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_works:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

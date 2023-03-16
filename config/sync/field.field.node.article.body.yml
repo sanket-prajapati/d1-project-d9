@@ -1,0 +1,29 @@
+uuid: 22e382e9-0a07-4e0c-a674-dba370b6729d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.article
+  module:
+    - text
+_core:
+  default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
+id: node.article.body
+field_name: body
+entity_type: node
+bundle: article
+label: 'Demo Article'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: "<p>This allows authors to input an explicit summary, to be displayed instead of the automatically trimmed text when using the \"Summary or trimmed\" display type.</p>\r\n"
+    summary: ''
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

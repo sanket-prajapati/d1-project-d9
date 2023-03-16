@@ -1,0 +1,29 @@
+uuid: 64652a4e-45c0-4ac3-91c2-6a9beba59c52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vagrant_reference
+    - node.type.drupal_vagrant
+    - taxonomy.vocabulary.vagrant_tag
+id: node.drupal_vagrant.field_vagrant_reference
+field_name: field_vagrant_reference
+entity_type: node
+bundle: drupal_vagrant
+label: Vagrant-Reference
+description: 'This is reference field for Vagrant-Reference'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vagrant_tag: vagrant_tag
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

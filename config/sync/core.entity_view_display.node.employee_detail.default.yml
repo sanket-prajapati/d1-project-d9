@@ -1,0 +1,46 @@
+uuid: 550a6573-a69b-4c13-abb1-f5f9ec479ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_detail.body
+    - field.field.node.employee_detail.field_emp_name_
+    - field.field.node.employee_detail.field_employee_works
+    - node.type.employee_detail
+  module:
+    - text
+    - user
+id: node.employee_detail.default
+targetEntityType: node
+bundle: employee_detail
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_emp_name_:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_employee_works:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

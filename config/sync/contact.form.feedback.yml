@@ -1,0 +1,14 @@
+uuid: 52040d0b-3a70-4723-82c1-200a6783e98f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - sanketprajapati0209@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

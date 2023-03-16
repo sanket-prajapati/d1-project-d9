@@ -1,0 +1,42 @@
+uuid: 6b63db98-752c-4aa2-b125-f1f5d8cb87a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_field_type_check
+    - field.field.node.page.field_formatter_h3
+    - field.field.node.page.field_image_styling
+    - field.field.node.page.field_new_bus
+    - field.field.node.page.field_new_car
+    - field.field.node.page.field_new_demo
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 8BgdRtLbtQ0F__o0FHSH0Mx5fvXOra9tfT1GmNKbRYw
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    weight: 101
+    region: content
+hidden:
+  field_field_type_check: true
+  field_formatter_h3: true
+  field_image_styling: true
+  field_new_bus: true
+  field_new_car: true
+  field_new_demo: true

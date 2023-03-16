@@ -1,0 +1,21 @@
+uuid: dff64a37-17b2-40de-9e3e-21264f7681c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_formatter_h3
+    - node.type.page
+  module:
+    - text
+id: node.page.field_formatter_h3
+field_name: field_formatter_h3
+entity_type: node
+bundle: page
+label: 'formatter h3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,4 @@
+administer access_module configuration:
+  title: 'Administer access_module configuration'
+  description: 'Optional description.'
+  restrict access: true

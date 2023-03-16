@@ -1,0 +1,13 @@
+services:
+  # logger.custom_logger:
+  #   class: Drupal\custom_logger\Logger\FileLog
+  #   arguments: ['@config.factory', '@logger.log_message_parser', '@date.formatter']
+  #   tags:
+  #     - { name: logger }
+
+  custom_logger.newLogger:
+    class: Drupal\custom_logger\services\newLoggerService
+
+  custom_logger.logger.channel.hello_world:
+    parent: logger.channel_base
+    arguments: ['hello_world']

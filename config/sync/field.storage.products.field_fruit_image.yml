@@ -1,0 +1,30 @@
+uuid: be6887c9-54aa-461a-8d2e-7277144140a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - productentity
+id: products.field_fruit_image
+field_name: field_fruit_image
+entity_type: products
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

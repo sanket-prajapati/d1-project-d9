@@ -1,0 +1,5 @@
+name: custom_logger
+type: module
+description: This is module for custom logger through services
+package: Custom
+core_version_requirement: ^9 || ^10

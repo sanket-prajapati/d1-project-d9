@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains example_field_formatter.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function example_field_formatter_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the example_field_formatter module.
+    case 'help.page.example_field_formatter':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Demo example module for field formatter') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+name: 'example_field_formatter'
+type: module
+description: 'Demo example module for field formatter'
+core_version_requirement: ^8 || ^9
+package: 'Custom modules'

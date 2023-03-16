@@ -1,0 +1,20 @@
+uuid: ba873e44-5567-42f8-abc3-ee67b90e87ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - cache_api_example
+  theme:
+    - bartik
+id: examplecacheapi
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: cache_api_example_example
+settings:
+  id: cache_api_example_example
+  label: 'Example cache api'
+  label_display: '0'
+  provider: cache_api_example
+visibility: {  }

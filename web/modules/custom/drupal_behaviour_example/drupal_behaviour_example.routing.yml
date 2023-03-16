@@ -1,0 +1,8 @@
+drupal_behaviour_example.example:
+  path: '/drupal-behaviour-example/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\drupal_behaviour_example\Controller\DrupalBehaviourExampleController::build'
+  requirements:
+    _permission: 'access content'
+

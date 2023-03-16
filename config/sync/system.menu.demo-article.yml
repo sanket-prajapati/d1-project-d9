@@ -1,0 +1,8 @@
+uuid: 23a10d64-941d-4c9e-8dac-345cf94e6050
+langcode: en
+status: true
+dependencies: {  }
+id: demo-article
+label: 'Demo Article'
+description: ''
+locked: false

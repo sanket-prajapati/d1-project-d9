@@ -1,0 +1,33 @@
+<?php
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_form.
+ *
+ * Completely hide the Meta vertical tab (field group) from people without permission.
+ *
+ */
+function common_access_form_system_site_information_settings_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+    dump($form_state);
+    // exit;
+    // If the current user has the permission, do not hide the Meta vertical tab.
+    // if (\Drupal::currentUser()->hasPermission('access meta tab')) {
+    //   return;
+    // }
+    // Code to hide the meta tab goes here, and is only reached if the user lacks the permission. 
+    // ...
+  }
+
+function common_access_form_alter(&$form, &$form_state, $form_id) {
+//   dump($form);
+  // If the current user has the permission, do not hide the Meta vertical tab.
+    if (\Drupal::currentUser()->hasPermission('access meta tab')) {
+      return;
+    }
+    $message= "This is message";
+    // print_r($message);
+    // dump($message);//works, check by anonomous user and having no permission as 'access meta tab'
+    // Code to hide the meta tab goes here, and is only reached if the user lacks the permission. 
+    // ...
+//   exit;
+}
+

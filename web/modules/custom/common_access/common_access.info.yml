@@ -1,0 +1,5 @@
+name: common_access
+type: module
+description: This module having custom access file and it is linked with servies.yml file you can use it anywhere
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,7 @@
+javascript_accordion.accordion:
+  js: 
+    js/ajax-xml.js: {}
+  css:
+    component:
+      css/ajax-xml.css: {}
+  

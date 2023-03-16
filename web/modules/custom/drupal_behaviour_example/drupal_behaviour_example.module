@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for drupal_behaviour_example module.
+ */
+ 
+// use hook for attachment of library to module   
+function drupal_behaviour_example_page_attachments(array &$page) {  
+ // using this variable we are creating js file initialization  
+  $page['#attached']['library'][] = 'drupal_behaviour_example/drupal_behaviour_example-js';  
+//   $page['#attached']['drupalSettings']['drupal_behaviour_example'];//It show error Therefor commented  
+}  
+
+?> 

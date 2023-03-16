@@ -1,0 +1,12 @@
+administer common_access configuration:
+  title: 'Administer common_access configuration'
+  description: 'Optional description.'
+  restrict access: true
+
+access meta tab:
+  title: 'Access meta tab'
+  description: 'Access meta information (author, creation date, boost information) in Meta vertical tab.'
+
+view contact entity:
+  title: 'View contact entity'
+  description: 'Demo permission for access check'

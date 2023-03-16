@@ -1,0 +1,19 @@
+uuid: 9001e8fe-a5ed-42ef-a234-49c17f6fe655
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.products.field_name
+    - productentity.products_type.fruits
+id: products.fruits.field_name
+field_name: field_name
+entity_type: products
+bundle: fruits
+label: 'Fruit type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

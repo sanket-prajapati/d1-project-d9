@@ -1,0 +1,17 @@
+uuid: 9bbeda23-66c7-4858-bebd-8d7a13735290
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Countries
+type: countries
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

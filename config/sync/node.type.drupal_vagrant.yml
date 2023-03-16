@@ -1,0 +1,18 @@
+uuid: 3492facc-baa8-40af-ba9a-f2be874aa1de
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - account
+    parent: 'account:menu_link_content:5620e035-bb32-44f1-a7da-e57de5bf617a'
+name: Drupal-vagrant
+type: drupal_vagrant
+description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ''Content here, content here'', making it look like readable English.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

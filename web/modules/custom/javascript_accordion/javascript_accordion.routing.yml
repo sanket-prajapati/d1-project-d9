@@ -1,0 +1,8 @@
+
+javascript_accordion.ajaxDemo:
+  path: '/ajax-demo'
+  defaults: 
+    _controller: 'Drupal\javascript_accordion\Controller\ajaxWithXML::ajaxDemo'
+    _title: 'Javascript Example'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,9 @@
+common_access.example:
+  path: '/common-access/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\common_access\Controller\CommonAccessController::build'
+  requirements:
+    _permission: 'access content'
+    drupalhacks_access: 'true'
+

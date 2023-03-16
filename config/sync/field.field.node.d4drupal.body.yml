@@ -1,0 +1,23 @@
+uuid: e1e4665a-7c5c-4033-b6a2-3a14bd4db568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.d4drupal
+  module:
+    - text
+id: node.d4drupal.body
+field_name: body
+entity_type: node
+bundle: d4drupal
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

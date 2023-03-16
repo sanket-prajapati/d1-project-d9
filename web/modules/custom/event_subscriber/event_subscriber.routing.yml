@@ -1,0 +1,8 @@
+event_subscriber.example:
+  path: '/event-subscriber/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\event_subscriber\Controller\EventSubscriberController::build'
+  requirements:
+    _permission: 'access content'
+

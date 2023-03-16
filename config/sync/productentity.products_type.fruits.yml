@@ -1,0 +1,6 @@
+uuid: b0aa002a-1c3f-4c3f-aad4-98ba83ef7f9f
+langcode: en
+status: true
+dependencies: {  }
+id: fruits
+label: Fruits

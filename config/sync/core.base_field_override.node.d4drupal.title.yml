@@ -1,0 +1,18 @@
+uuid: 3f961a5a-177c-4662-a847-050fe7b862a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.d4drupal
+id: node.d4drupal.title
+field_name: title
+entity_type: node
+bundle: d4drupal
+label: 'Name: '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

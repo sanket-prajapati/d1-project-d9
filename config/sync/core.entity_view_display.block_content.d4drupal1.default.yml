@@ -1,0 +1,36 @@
+uuid: 1553faa3-13a6-4d47-b02d-e6cb7bb37fa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.d4drupal1
+    - field.field.block_content.d4drupal1.body
+    - field.field.block_content.d4drupal1.field_link_demo
+  module:
+    - link
+    - text
+id: block_content.d4drupal1.default
+targetEntityType: block_content
+bundle: d4drupal1
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link_demo:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

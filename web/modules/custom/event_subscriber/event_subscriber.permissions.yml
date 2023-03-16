@@ -1,0 +1,4 @@
+administer event_subscriber configuration:
+  title: 'Administer event_subscriber configuration'
+  description: 'Optional description.'
+  restrict access: true

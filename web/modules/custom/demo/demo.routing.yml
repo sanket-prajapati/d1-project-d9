@@ -1,0 +1,33 @@
+demo.example:
+  path: '/demo/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\demo\Controller\DemoController::build'
+  requirements:
+    _permission: 'access content'
+
+
+demo.ajax:
+  path: '/demo/ajax'
+  defaults:
+    _title: 'Ajax form'
+    _form: 'Drupal\demo\Form\AjaxForm'
+  requirements:
+    _permission: 'access content'
+
+demo.ajax2:
+  path: '/demo/ajax2'
+  defaults:
+    _title: 'Ajax form2'
+    _form: 'Drupal\demo\Form\AjaxFormDi'
+  requirements:
+    _permission: 'access content'
+
+demo.ajax3:
+  path: '/demo/ajax3'
+  defaults:
+    _title: 'Ajax form3'
+    _form: 'Drupal\demo\Form\AjaxFormDiServices'
+  requirements:
+    _permission: 'access content'
+

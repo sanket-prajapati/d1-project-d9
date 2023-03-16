@@ -1,0 +1,51 @@
+uuid: 20ba0f20-75d7-4d6e-9d10-d9c3a0fbaf03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.products.fruits.field_fruit_image
+    - field.field.products.fruits.field_name
+    - productentity.products_type.fruits
+  module:
+    - image
+    - user
+id: products.fruits.default
+targetEntityType: products
+bundle: fruits
+mode: default
+content:
+  field_fruit_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

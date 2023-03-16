@@ -1,0 +1,75 @@
+uuid: 83555a9a-2bd9-48de-9497-885df7b08d20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.employee_name.field_employee_name
+    - field.field.taxonomy_term.employee_name.field_experience
+    - field.field.taxonomy_term.employee_name.field_works
+    - taxonomy.vocabulary.employee_name
+  module:
+    - path
+    - text
+id: taxonomy_term.employee_name.default
+targetEntityType: taxonomy_term
+bundle: employee_name
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee_name:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_experience:
+    type: text_textarea
+    weight: 103
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_works:
+    type: entity_reference_autocomplete
+    weight: 102
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

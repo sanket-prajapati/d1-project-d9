@@ -1,0 +1,21 @@
+uuid: b29e2dd2-6c8e-4d99-9582-2dfb976b33f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - productentity
+id: products.field_name
+field_name: field_name
+entity_type: products
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

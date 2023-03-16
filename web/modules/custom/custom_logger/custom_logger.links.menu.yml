@@ -1,0 +1,6 @@
+custom_logger.settings_form:
+  title: 'custom_logger'
+  description: 'Configure custom_logger.'
+  parent: system.admin_config_system
+  route_name: custom_logger.settings_form
+  weight: 10

@@ -1,0 +1,8 @@
+custom_mail.example:
+  path: '/custom-mail/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\custom_mail\Controller\CustomMailController::build'
+  requirements:
+    _permission: 'access content'
+

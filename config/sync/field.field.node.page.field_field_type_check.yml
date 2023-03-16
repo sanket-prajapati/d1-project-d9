@@ -1,0 +1,21 @@
+uuid: 50d263ec-d0ac-4180-a40b-edb86f5d81b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_type_check
+    - node.type.page
+  module:
+    - example_fieldtype
+id: node.page.field_field_type_check
+field_name: field_field_type_check
+entity_type: node
+bundle: page
+label: 'field type check'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: demo_field_type

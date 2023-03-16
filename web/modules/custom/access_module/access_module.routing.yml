@@ -1,0 +1,9 @@
+access_module.example:
+  path: '/access-module/example-access'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\access_module\Controller\AccessModuleController::build'
+  requirements:
+    _permission: 'access content'
+    # Custom access in only one controller file
+    _custom_access: '\Drupal\access_module\Controller\AccessModuleController::access'

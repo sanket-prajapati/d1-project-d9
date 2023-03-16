@@ -1,0 +1,22 @@
+uuid: 7e0917e9-a89f-43c2-b0fc-b85cb4e510ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: emp_name_
+label: 'Drupal vagrant'
+type: 'canonical_entities:node'
+pattern: 'drupal-vagrant/[node:title]'
+selection_criteria:
+  925476fa-be52-471b-94f4-a8faf1f4a54c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 925476fa-be52-471b-94f4-a8faf1f4a54c
+    context_mapping:
+      node: node
+    bundles:
+      drupal_vagrant: drupal_vagrant
+selection_logic: and
+weight: 0
+relationships: {  }

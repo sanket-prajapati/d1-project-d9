@@ -1,0 +1,21 @@
+uuid: 1610e050-ac39-4495-ada1-4113913ea953
+langcode: en
+status: true
+dependencies:
+  module:
+    - example_fieldtype
+    - node
+id: node.field_new_car
+field_name: field_new_car
+entity_type: node
+type: license_plate
+settings:
+  number_max_length: 255
+  code_max_length: 5
+module: example_fieldtype
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

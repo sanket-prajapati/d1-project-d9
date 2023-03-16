@@ -1,0 +1,16 @@
+<?php
+
+/**
+  * Implements hook_theme()
+  */
+function javascript_accordion_theme(){
+  return [
+
+    'ajax-cd-display' => [
+      'variables' => [
+        'title' => NULL,
+      ],
+    ],
+  ];
+}
+

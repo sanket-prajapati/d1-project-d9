@@ -1,0 +1,8 @@
+user_module.example:
+  path: '/user-module/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\user_module\Controller\UserModuleController::build'
+  requirements:
+    _permission: 'access content'
+

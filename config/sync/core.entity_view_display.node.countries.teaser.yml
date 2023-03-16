@@ -1,0 +1,24 @@
+uuid: bc7fd9dc-9624-4665-8821-95b6fbba17d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.countries.field_capital
+    - field.field.node.countries.field_currency
+    - node.type.countries
+  module:
+    - user
+id: node.countries.teaser
+targetEntityType: node
+bundle: countries
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_capital: true
+  field_currency: true

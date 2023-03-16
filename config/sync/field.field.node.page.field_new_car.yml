@@ -1,0 +1,21 @@
+uuid: 8f602b30-6ba3-47a4-bab0-ca86bf4384e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_new_car
+    - node.type.page
+  module:
+    - example_fieldtype
+id: node.page.field_new_car
+field_name: field_new_car
+entity_type: node
+bundle: page
+label: 'new car'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: license_plate

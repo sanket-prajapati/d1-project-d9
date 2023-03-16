@@ -1,0 +1,18 @@
+uuid: 3630457d-01f7-49a8-92b8-120f9af6552d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - account
+    parent: 'account:'
+name: D4Drupal
+type: d4drupal
+description: 'The human-readable name of this content type. This text will be displayed as part of the list on the Add content page. This name must be unique.'
+help: 'Helptext for D4Drupal content type'
+new_revision: true
+preview_mode: 1
+display_submitted: true

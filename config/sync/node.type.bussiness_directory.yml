@@ -1,0 +1,17 @@
+uuid: d514ec93-fdc4-4409-a4fb-0c6e2d788c28
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Bussiness Directory'
+type: bussiness_directory
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

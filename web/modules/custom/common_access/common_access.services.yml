@@ -1,0 +1,13 @@
+services:
+  common_access.access_check:
+    class: \Drupal\common_access\Access\CommonAccessCheck
+    tags:
+      - { name: access_check, applies_to: drupalhacks_access }
+
+
+  #   services:
+  # event_subscriber.event_subscriber:
+  #   class: Drupal\event_subscriber\EventSubscriber\EventSubscriberSubscriber
+  #   arguments: ['@messenger']
+  #   tags:
+  #     - { name: event_subscriber }

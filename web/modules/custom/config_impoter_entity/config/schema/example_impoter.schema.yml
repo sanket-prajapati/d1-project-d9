@@ -1,0 +1,35 @@
+config_impoter_entity.example_impoter.*:
+  type: config_entity
+  label: 'Example impoter config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    url:
+      type: uri
+      label: Uri
+    plugin:
+      type: string
+      label: Plugin ID
+    update_existing:
+      type: boolean
+      label: Whether to update existing products
+    source:
+      type: string
+      label: The source of the products
+
+# config_impoter_entity.example_impoter.plugin.csv:
+#   type: mapping
+#     label: Plugin configuration for the CSV importer plugin
+#     mapping:
+#       file:
+#         type: sequence
+#         label: File IDs
+#         sequence:
+#           type: integer
+#           label: CSV File ID

@@ -1,0 +1,10 @@
+services:
+  demo.event_subscriber:
+    class: Drupal\demo\EventSubscriber\DemoSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }
+  
+  demo.db:
+    class: Drupal\demo\services\Db_insert
+    arguments: ['@database']

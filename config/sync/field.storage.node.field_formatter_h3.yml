@@ -1,0 +1,19 @@
+uuid: 5bbc0f85-83f9-4270-ac53-811c41650470
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_formatter_h3
+field_name: field_formatter_h3
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

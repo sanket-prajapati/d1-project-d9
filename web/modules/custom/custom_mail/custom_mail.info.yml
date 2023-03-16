@@ -1,0 +1,5 @@
+name: custom_mail
+type: module
+description: This module for sending mail
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,22 @@
+uuid: 933db4d6-cdc0-4428-9576-7708bbd13116
+langcode: en
+status: true
+dependencies:
+  module:
+    - example_fieldtype
+    - node
+id: node.field_field_type_check
+field_name: field_field_type_check
+entity_type: node
+type: demo_field_type
+settings:
+  max_length: '255'
+  is_ascii: false
+  case_sensitive: false
+module: example_fieldtype
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 26426b1a-a1e9-4976-af15-019b7d93a952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.bussiness_directory
+  module:
+    - link
+id: node.bussiness_directory.field_website
+field_name: field_website
+entity_type: node
+bundle: bussiness_directory
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link
