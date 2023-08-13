@@ -1,0 +1,5 @@
+name: custom drush module
+type: module
+description: Provide custom drush command for learning
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
